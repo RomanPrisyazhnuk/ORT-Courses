@@ -20,18 +20,18 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<Item_View_Holder>
     @Override
     public Item_View_Holder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);//задаем вьюху для вью холдера
         return new Item_View_Holder(view);
     }
 
-    public AdapterRecyclerView(ArrayList listperson, Context mContext)
+    public AdapterRecyclerView(ArrayList listperson, Context mContext)//получаем контекст и персоны из конфига
     {
         this.listperson = listperson;
         this.mContext = mContext;
     }
 
     @Override
-    public void onBindViewHolder(Item_View_Holder holder, int position)
+    public void onBindViewHolder(Item_View_Holder holder, int position)//отображаем наши данные
     {
         Person person=(Person)listperson.get(position);
 
