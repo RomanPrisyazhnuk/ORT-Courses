@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 
-public class Item_View_Holder extends RecyclerView.ViewHolder
+public class Item_View_Holder extends RecyclerView.ViewHolder//отображает персон
 {
     private ImageView photo;
     private EditText fName;
