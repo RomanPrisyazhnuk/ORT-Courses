@@ -5,12 +5,13 @@ import java.util.ArrayList;
 
 public class Config
 {
+    //хранилища данных о персонах
     public final static String[] fNames = {"Alex", "Dmitriy", "Vasya"};
     public final static String[] lNames = {"Frost", "Green", "Losev"};
     public final static String[] photos = {"https://c-a.d-cd.net/5d5e482s-960.jpg",
                                             "https://e-a.d-cd.net/d1cb8eu-960.jpg",
                                             "https://s-media-cache-ak0.pinimg.com/736x/9f/58/d7/9f58d7f6ebd01808f1ff8230008f086c.jpg"};
-
+//отдает коллекцию персон с данными
     public ArrayList getPersonData()
     {
         ArrayList listperson = new ArrayList();
